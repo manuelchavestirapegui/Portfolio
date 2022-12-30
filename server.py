@@ -1,12 +1,10 @@
 import csv
-from flask_bootstrap import Bootstrap
 from flask import Flask, render_template, url_for, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = "x98\xefpQ\xe6\xf6\xff\xac\xd4\xa0\x17\x12"
-Bootstrap(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///messages.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
