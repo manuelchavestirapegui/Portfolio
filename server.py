@@ -70,4 +70,4 @@ def submit_form():
         add_to_database(data)
         return redirect('thankyou.html')
     else:
-        return 'Something went wrong, please, try again.'
+        return 'Something went wrong, please try again.'
